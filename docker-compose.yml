@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+    fmd:
+        image: registry.gitlab.com/nulide/findmydeviceserver:latest
+        container_name: fmd
+        hostname: fmd
+        restart: always
+        user: 65534:65534
+        read_only: true
+        security_opt:
+         - no-new-privileges:true
+        cap_drop:
+         - ALL
+        ports:
+         - '127.0.0.1:1020:1020'
+        volumes:
+            - './data:/fmd/objectbox/'
