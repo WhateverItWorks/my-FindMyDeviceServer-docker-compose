@@ -3,8 +3,24 @@
 # my-FindMyDeviceServer-docker-compose
 This server is able to communicate with Find My Device and save the latest location end-to-end encrypted on it.
 
-# Android App
-https://gitlab.com/Nulide/findmydevice
+### Reverse Proxy (Caddy)
+```
+Caddy will automatically create a Let's Encrypt certificate for you.
+```
+
+### Reverse Proxy (Nginx)
+```
+Use my nginx.conf
+```
+
+# Cross-Platform
+
+- [Android](https://gitlab.com/Nulide/findmydevice)
+- [iOS]()
+- [Linux]()
+- [MacOS]()
+- [Windows]()
+- [Web Browser](https://fmd.whateveritworks.org)
 
 ### Another Open-Souce Find My Device
 
