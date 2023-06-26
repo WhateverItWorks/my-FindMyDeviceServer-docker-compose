@@ -2,6 +2,7 @@ version: '3.7'
 
 services:
     fmd:
+    #image: registry.gitlab.com/nulide/findmydeviceserver
         build:
           context: .
           dockerfile: Dockerfile
